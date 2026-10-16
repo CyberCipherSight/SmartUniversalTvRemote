@@ -1,0 +1,37 @@
+# Android Studio / IntelliJ
+*.iml
+.idea/
+.gradle/
+local.properties
+.DS_Store
+
+# Build outputs
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Secrets / signing material
+.env
+.env.*
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+key.properties
+keystore.properties
+signing.properties
+google-services.json
+secrets.properties
+
+# Local credentials / machine-specific files
+*.properties.local
+credentials.json
+service-account*.json
+
+# Release binaries are added manually through GitHub Releases
+*.apk
+*.aab

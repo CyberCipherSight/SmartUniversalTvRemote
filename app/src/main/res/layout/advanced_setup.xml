@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:background="@drawable/bg_panel" android:orientation="vertical" android:padding="12dp">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TV brand" android:textColor="@color/text_secondary" android:textSize="12sp" />
+    <Spinner android:id="@+id/brandSpinner" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="3dp" android:spinnerMode="dropdown" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Series / model family" android:textColor="@color/text_secondary" android:textSize="12sp" />
+    <Spinner android:id="@+id/modelSpinner" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="3dp" android:spinnerMode="dropdown" />
+    <Button android:id="@+id/findTvButton" style="@style/RemoteButton.Accent" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="10dp" android:layout_weight="0" android:text="FIND / CHANGE TV" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="If the model is unknown, this tests likely IR families and saves the one your TV responds to." android:textColor="@color/text_secondary" android:textSize="11sp" />
+</LinearLayout>

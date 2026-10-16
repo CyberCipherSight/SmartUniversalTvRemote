@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Universal TV Remote</string>
+    <string name="ir_ready">IR emitter ready</string>
+    <string name="no_ir">No IR emitter detected</string>
+    <string name="no_ir_detail">This phone does not expose usable Android consumer IR hardware.</string>
+    <string name="ir_error">IR transmission failed</string>
+    <string name="unknown_error">Unknown transmission error</string>
+</resources>
