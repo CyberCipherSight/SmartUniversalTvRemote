@@ -11,6 +11,11 @@ app/build/
 captures/
 .externalNativeBuild/
 .cxx/
+firmware/ir_learner/build/
+
+# Workspace-local tooling / caches
+.tools/
+__pycache__/
 
 # Secrets / signing material
 .env
