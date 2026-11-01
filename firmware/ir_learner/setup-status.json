@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "phase": "receive_only",
+  "firmware_build": "passed",
+  "target": "ESP32-D0WD-V3 (revision v3.1), 4 MB flash",
+  "receive_gpio_default": 27,
+  "usb_serial_available": true,
+  "upload": "completed_hash_verified_2026-10-28",
+  "heartbeat": "passed_receive_only_gpio27",
+  "receiver": "connected_user_reported_receive_path_test_passed",
+  "actual_captures": 5,
+  "tests": "10 passed",
+  "philips_spa5250b94_original_remote_verified": false,
+  "next_physical_action": "Obtain the original Philips SPA5250B/94 remote, then capture and label each button several times."
+}
