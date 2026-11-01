@@ -42,7 +42,7 @@
     {
       "url": "https://downloads.arduino.cc/discovery/mdns-discovery/mdns-discovery_v1.1.0_Linux_64bit.tar.gz",
       "archive": "mdns-discovery_v1.1.0_Linux_64bit.tar.gz",
-      "sha256": "6966e80d82a388706d6d9d8a63d46035d19d1e6b4fb1ebeaf7fea056",
+      "sha256": "6966f406e5b6e80d82a388706d6d9d8a63d46035d19d1e6b4fb1ebeaf7fea056",
       "destination": "data/packages/builtin/tools/mdns-discovery/1.1.0"
     },
     {
