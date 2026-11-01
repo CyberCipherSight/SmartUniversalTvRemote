@@ -55,6 +55,25 @@ An IR blaster normally transmits one way; it cannot ask an IR-only television fo
 
 For remote control, identifying the working IR family is more useful than guessing the exact television SKU.
 
+## ESP32 IR learning prototype
+
+![Hand-built ESP32 IR learning prototype](docs/images/esp32-ir-learning-prototype.jpg)
+
+Alongside the Android transmitter, I built a receive-only IR learning rig around an **ESP32-D0WD-V3** and a demodulating IR receiver. The firmware listens continuously, decodes supported protocols with IRremoteESP8266, and preserves raw mark/space timings for unknown frames. Host-side Python tools record each frame with source/button context so captures can be reviewed and compared without silently promoting them to verified device codes.
+
+The hardware receive path has been tested and **five test frames were captured**. The original Philips SPA5250B/94 remote is not currently available, so no Philips codes are marked verified.
+
+The intended learning workflow is:
+
+1. Connect the ESP32 + receiver and start a capture session.
+2. Press buttons on a physical remote or send test IR from a phone.
+3. Preserve decoded protocol/address/command fields **and** the raw timing envelope.
+4. Label the captured function, such as Power or Volume Up.
+5. Compare repeated/original-remote captures before promoting them into the app's device database.
+6. In the current development workflow, valid captures can be brought into the Android app over USB OTG and replayed through the phone's own IR blaster. The ESP32 itself remains receive-only.
+
+See [ESP32 firmware and capture tooling](firmware/ir_learner/README.md) and [offline USB learning workflow](docs/USB_LEARNING.md).
+
 ## Privacy
 
 The current Android manifest declares only:
@@ -112,6 +131,10 @@ app/src/main/java/com/cybersight/panasonicremote/
     ├── ModelCatalog.kt           # TV-family hints
     ├── TvProfile.kt
     └── TvProfiles.kt             # Brand/profile command maps
+
+firmware/ir_learner/              # Receive-only ESP32 IR capture firmware
+tools/ir_capture/                 # Setup, flash, record and comparison tools
+docs/USB_LEARNING.md              # Android/ESP32 learning workflow
 ```
 
 ## Research and IR data provenance
