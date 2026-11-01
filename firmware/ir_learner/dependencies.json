@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "core": {
+    "url": "https://github.com/espressif/arduino-esp32/releases/download/2.0.17/esp32-2.0.17.zip",
+    "archive": "esp32-2.0.17.zip",
+    "sha256": "1f8658d4b18a8001ce782142ad08164af2991d70b83a147c3437a6ee30a9b225",
+    "destination": "data/packages/esp32/hardware/esp32/2.0.17"
+  },
+  "tools": [
+    {
+      "url": "https://github.com/espressif/crosstool-NG/releases/download/esp-2021r2-patch5/xtensa-esp32-elf-gcc8_4_0-esp-2021r2-patch5-linux-amd64.tar.gz",
+      "archive": "xtensa-esp32-elf-gcc8_4_0-esp-2021r2-patch5-linux-amd64.tar.gz",
+      "sha256": "8ef14e0409c2011b41e504a30f70d3e35287313a795d1f2462ad2cd0e2052d37",
+      "destination": "data/packages/esp32/tools/xtensa-esp32-elf-gcc/esp-2021r2-patch5-8.4.0"
+    },
+    {
+      "url": "https://github.com/espressif/arduino-esp32/releases/download/2.0.7/esptool-v4.5.1-src.tar.gz",
+      "archive": "esptool-v4.5.1-src.tar.gz",
+      "sha256": "aa06831a7d88d8ccde4ea21241e983a08dbdae967290e181658b0d18bffc8f86",
+      "destination": "data/packages/esp32/tools/esptool_py/4.5.1"
+    },
+    {
+      "url": "https://github.com/igrr/mkspiffs/releases/download/0.2.3/mkspiffs-0.2.3-arduino-esp32-linux64.tar.gz",
+      "archive": "mkspiffs-0.2.3-arduino-esp32-linux64.tar.gz",
+      "sha256": "5e1a4ff41385e842f389f6b5254102a547e566a06b49babeffa93ef37115cb5d",
+      "destination": "data/packages/esp32/tools/mkspiffs/0.2.3"
+    },
+    {
+      "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/3.0.0-gnu12/x86_64-linux-gnu.mklittlefs-c41e51a.200706.tar.gz",
+      "archive": "x86_64-linux-gnu.mklittlefs-c41e51a.200706.tar.gz",
+      "sha256": "66e84dda0aad747517da3785125e05738a540948aab2b7eaa02855167a1eea53",
+      "destination": "data/packages/esp32/tools/mklittlefs/3.0.0-gnu12-dc7f933"
+    }
+  ],
+  "builtins": [
+    {
+      "url": "https://downloads.arduino.cc/discovery/serial-discovery/serial-discovery_v1.5.2_Linux_64bit.tar.gz",
+      "archive": "serial-discovery_v1.5.2_Linux_64bit.tar.gz",
+      "sha256": "7a95d7386c66c0846fe4aa96b601e72783ae64f541eb2f5edb4fc9e69a04b6d3",
+      "destination": "data/packages/builtin/tools/serial-discovery/1.5.2"
+    },
+    {
+      "url": "https://downloads.arduino.cc/discovery/mdns-discovery/mdns-discovery_v1.1.0_Linux_64bit.tar.gz",
+      "archive": "mdns-discovery_v1.1.0_Linux_64bit.tar.gz",
+      "sha256": "6966e80d82a388706d6d9d8a63d46035d19d1e6b4fb1ebeaf7fea056",
+      "destination": "data/packages/builtin/tools/mdns-discovery/1.1.0"
+    },
+    {
+      "url": "https://downloads.arduino.cc/discovery/dfu-discovery/dfu-discovery_v0.1.2_Linux_64bit.tar.gz",
+      "archive": "dfu-discovery_v0.1.2_Linux_64bit.tar.gz",
+      "sha256": "d82649741fd6cbe369d7fe22d290efd7e28e4d6fd0b81b7b1eabff43b495b5f8",
+      "destination": "data/packages/builtin/tools/dfu-discovery/0.1.2"
+    },
+    {
+      "url": "https://downloads.arduino.cc/tools/ctags-5.8-arduino11-pm-x86_64-pc-linux-gnu.tar.bz2",
+      "archive": "ctags-5.8-arduino11-pm-x86_64-pc-linux-gnu.tar.bz2",
+      "sha256": "62b514f3aaf37b5429ef703853bb46365fb91b4754c1916d085bf134004886e3",
+      "destination": "data/packages/builtin/tools/ctags/5.8-arduino11"
+    },
+    {
+      "url": "https://downloads.arduino.cc/monitor/serial-monitor/serial-monitor_v0.15.0_Linux_64bit.tar.gz",
+      "archive": "serial-monitor_v0.15.0_Linux_64bit.tar.gz",
+      "sha256": "f1bc9680f2cff08688bc4ccbaf5e9be4ce38aa3f10d40a487a7704c04006f19b",
+      "destination": "data/packages/builtin/tools/serial-monitor/0.15.0"
+    }
+  ],
+  "cli": {
+    "url": "https://github.com/arduino/arduino-cli/releases/download/v1.5.1/arduino-cli_1.5.1_Linux_64bit.tar.gz",
+    "archive": "arduino-cli_1.5.1_Linux_64bit.tar.gz",
+    "sha256": "28a8e119c498a25607821c36cb2dc49e8463941b261a0d99091baa7bc692dd2b",
+    "destination": "bin"
+  },
+  "library": {
+    "url": "https://github.com/crankyoldgit/IRremoteESP8266/archive/refs/tags/v2.9.0.tar.gz",
+    "archive": "IRremoteESP8266-2.9.0.tar.gz",
+    "sha256": "41fb3de7e411ccdc4b0e3211c36c43cf5037519fa0d465093540c2c0d3e3cad3",
+    "destination": "sketchbook/libraries/IRremoteESP8266-2.9.0"
+  },
+  "pyserial": {
+    "url": "https://files.pythonhosted.org/packages/07/bc/587a445451b253b285629263eb51c2d8e9bcea4fc97826266d186f96f558/pyserial-3.5-py2.py3-none-any.whl",
+    "archive": "pyserial-3.5-py2.py3-none-any.whl",
+    "sha256": "c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0"
+  }
+}
